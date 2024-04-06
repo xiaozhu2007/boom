@@ -24,7 +24,7 @@ jobs:
           echo $UUID-$RANDOM > god
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: 'feat: Update [skip ci]'
+        commit_message: 'fox: Update [skip ci]'
         branch: master
         commit_user_name: HelloTools-Bot
         commit_user_email: 3356136957@qq.com
