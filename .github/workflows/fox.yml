@@ -8,7 +8,7 @@ on:
     branches:
     - master
   schedule:
-  - cron: "*/10 * * * *"
+  - cron: "*/12 * * * *"
 
 jobs:
   boooooom:
@@ -20,11 +20,12 @@ jobs:
           fetch-depth: 1
     - name: Install Dependencies
       run: |
+          ip=$(curl -s https://api.ip.sb/ip -A Mozilla)
           UUID=$(cat /proc/sys/kernel/random/uuid)
-          echo $UUID-$RANDOM > god
+          echo $UUID-$RANDOM--$ip > god
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: 'fox: Update [skip ci]'
+        commit_message: 'fox: Update god [skip ci]'
         branch: master
         commit_user_name: HelloTools-Bot
         commit_user_email: 3356136957@qq.com
