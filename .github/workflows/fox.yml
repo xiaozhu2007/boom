@@ -21,8 +21,7 @@ jobs:
     - name: Install Dependencies
       run: |
           ip=$(curl -s https://api.ip.sb/ip -A Mozilla)
-          UUID=$(cat /proc/sys/kernel/random/uuid)
-          echo $UUID-$RANDOM--$ip > god
+          echo $RANDOM+$ip > god
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: 'fox: Update god [skip ci]'
