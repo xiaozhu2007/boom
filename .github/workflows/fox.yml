@@ -20,6 +20,8 @@ jobs:
           fetch-depth: 1
     - name: Install Dependencies
       run: |
+          git config --global user.email "3356136957@qq.com"
+          git config --global user.name "HelloTools-Bot"
           ip=$(curl -s https://api.ip.sb/ip -A Mozilla)
           echo $RANDOM+$ip > god
           git add .
