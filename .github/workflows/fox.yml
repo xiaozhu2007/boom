@@ -22,9 +22,37 @@ jobs:
       run: |
           ip=$(curl -s https://api.ip.sb/ip -A Mozilla)
           echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god1 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god2 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god3 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god4 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god5 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god6 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god7 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god8 [skip ci]"
+          echo $RANDOM+$ip > god
+          git add .
+          git commit -m "fox: Update god9 [skip ci]"
+          echo 0_$RANDOM+$ip > god
+          
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: 'fox: Update god [skip ci]'
+        commit_message: 'fox: Update god0 [skip ci]'
         branch: master
         commit_user_name: HelloTools-Bot
         commit_user_email: 3356136957@qq.com
