@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: '14 1 * * *'
   workflow_dispatch:
+  push:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
