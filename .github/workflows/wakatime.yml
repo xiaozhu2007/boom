@@ -20,4 +20,4 @@ jobs:
           INPUT_USE_OLD_FORMAT: false
           INPUT_GH_TOKEN: ${{ secrets.GH_TOKEN }}
           INPUT_GIST_ID: "171cfe003da4c39b251770405079cfe3"
-          INPUT_WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          INPUT_WAKA_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
