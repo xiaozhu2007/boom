@@ -1,13 +1,13 @@
 name: Update gist with WakaTime summary
 on:
   schedule:
-    - cron: '40 1 * * *'
+    - cron: '14 1 * * *'
 jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Update gist
+      - name: Update Gist
         uses: superman66/wakatime-sync@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
