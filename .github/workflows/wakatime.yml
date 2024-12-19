@@ -17,7 +17,7 @@ jobs:
           # NUMBER OF LANGUAGES DISPLAYED
           INPUT_MAX_RESULT: 5
           INPUT_PRINT_SUMMARY: true
-          INPUT_USE_OLD_FORMAT: false
+          INPUT_USE_OLD_FORMAT: true
           INPUT_GH_TOKEN: ${{ secrets.GH_TOKEN }}
           INPUT_GIST_ID: "171cfe003da4c39b251770405079cfe3"
           INPUT_WAKATIME_BASE_URL: "https://wakapi.liuzhen932.top/api/compat/wakatime/v1"
