@@ -38,5 +38,5 @@ jobs:
         commit_message: 'fox: Update LAST [skip ci]'
         branch: master
         commit_user_name: HelloTools-Bot
-        commit_user_email: 3356136957@qq.com
-        commit_author: HelloTools-Bot <3356136957@qq.com>
+        commit_user_email: bot@932.moe
+        commit_author: HelloTools-Bot <bot@932.moe>
