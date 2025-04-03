@@ -1,0 +1,24 @@
+name: Update gist with WakaTime
+on:
+  schedule:
+    - cron: '14 1 * * *'
+  workflow_dispatch:
+  push:
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Update Gist
+        uses: abordage/wakatime-box@master
+        env:
+          # SUPPORTED: last_7_days, last_30_days, last_6_months, last_year
+          INPUT_DATE_RANGE: last_7_days
+          # NUMBER OF LANGUAGES DISPLAYED
+          INPUT_MAX_RESULT: 5
+          INPUT_PRINT_SUMMARY: true
+          INPUT_USE_OLD_FORMAT: true
+          INPUT_GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          INPUT_GIST_ID: "171cfe003da4c39b251770405079cfe3"
+          INPUT_WAKATIME_BASE_URL: "https://wakapi.liuzhen932.top/api/compat/wakatime/v1"
+          INPUT_WAKA_API_KEY: ${{ secrets.WAKAPI_API_KEY }}
