@@ -23,7 +23,7 @@ jobs:
           git config --global user.email "bot@932.moe"
           git config --global user.name "HelloTools-Bot"
           ip=$(curl -s https://api.ip.sb/ip -A Mozilla)
-          for loop in {0..1145}; do
+          for loop in {0..50}; do
             git commit --allow-empty -m "fox: Update [skip ci]"
           done
           echo $ip >> ip
