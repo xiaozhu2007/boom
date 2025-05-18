@@ -19,6 +19,6 @@ jobs:
           INPUT_PRINT_SUMMARY: true
           INPUT_USE_OLD_FORMAT: true
           INPUT_GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          INPUT_GIST_ID: "171cfe003da4c39b251770405079cfe3"
+          INPUT_GIST_ID: "83daf28f55b854ee17a21c84484894ca"
           INPUT_WAKATIME_BASE_URL: "https://wakapi.xmsl.im/api/compat/wakatime/v1"
           INPUT_WAKA_API_KEY: ${{ secrets.WAKAPI_API_KEY }}
