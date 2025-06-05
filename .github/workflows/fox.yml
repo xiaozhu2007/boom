@@ -23,14 +23,14 @@ jobs:
           git config --global user.email "bot@932.moe"
           git config --global user.name "HelloTools-Bot"
           ip=$(curl -s https://api.ip.sb/ip -A Mozilla)
-          for loop in {0..50}; do
-            git commit --allow-empty -m "fox: Update [skip ci]"
+          for loop in {0..1145}; do
+            git commit --allow-empty -m "chore: Update [skip ci]"
           done
           echo $ip >> ip
-          
+
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: 'fox: Update LAST [skip ci]'
+        commit_message: 'chore: Update [skip ci]'
         branch: master
         commit_user_name: HelloTools-Bot
         commit_user_email: bot@932.moe
